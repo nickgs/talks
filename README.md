@@ -1,5 +1,5 @@
-# Collection of presentations
+# Hello Drupal talk deck
 
-Each branch is a different presentation.
+These slides are designed to accompany a introductory talk on Drupal
 
 Powered by reveal.js
