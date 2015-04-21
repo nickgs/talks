@@ -59,68 +59,104 @@
 				</section>
 
 				<section>
-					<h2>For Developers</h2>
+					<section>
+						<h2>So what is Docker?</h2>
+						<p>"Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications." <br/>-via Docker.com</p>
+					</section>
+					<section class="light-blue">
+						<h2>Ok what does that mean?</h2>
+						<p>Fundamentally, a usability layer on top of Linux Containers</p>
+						<p><img src ="images/docker-exec-diagram.png"/></p>
+					</section>
+					<section class="light-blue">
+						<h2>Containers?</h2
+						<p>A way to isolate processes on a host machine without the heavy overhead of a Virtual Machine.</p>
+					</section>
+					<section class="light-blue">
+						<h2>Containers vs Virtual Machines</h2>
+						<p><img src ="images/lxc_vs_vm.jpg"/></p>
+					</section>
 				</section>
 
 				<section>
-					<h2>For Publishers</h2>
+					<section>
+						<h2>So why should we care?</h2>
+					</section>
 				</section>
 
 				<!-- Example of nested vertical slides -->
-				<section data-background="http://www.siftdigital.co.uk/sites/default/files/drupal-community.png">
-					<section class="light-blue">
-						<h2>Why Drupal?</h2>
+				<section>
+					<section>
+						<h2>As developers?</h2>
 					</section>
-					<section class="light-blue">
-						<h2>Large vibrant Community</h2>
-						<p>Welcome to ours here on Long Island!</p>
+					<section>
+						<ul>
+							<li>Develop with production configuration and environments</li>
+							<li>Make it easier to share your application and its surrounding software stack in a light weight fashion</li>
+							<li>Much easier and less stressful trying new technolgies.</li>
+						</ul>
 					</section>
-					<section class="light-blue">
-						<h2>Fully modular architecture</h2>
-						<p>Over <span class='high'>27,000</span> contributed modules</p>
-						<p>Over <span class='high'>2,018</span> contributed themes</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>As sysadmins?</h2>
 					</section>
-					<section class="light-blue">
-						<h2>Open collaboration</h2>
-						<p>Combining our large community with our modular architecture leads to a rich collaborative environment</p>
+					<section>
+						<ul>
+							<li>Simple tools to define your containers using Dockerfiles. Dont have to learn a new syntax like Puppet or Chef.</li>
+							<li>Creating test environments and the general portabilty of your infrastructure increases</li>
+							<li>Greater flexabilty with scaling applications across different geographical locations and cloud service providers</li>
+						</ul>
 					</section>
 				</section>
 
 				<section data-transition="linear" data-background="#527c97" data-background-transition="slide">
-					<h2>When to use Drupal?</h2>
-					<ul>
-						<li>Medium / Large web applications (eCommerce, community, publishing)</li>
-						<li>Company intranet application platform</li>
-						<li>Can be used for small applications but may be overkill</li>
-					</ul>
+					<section>
+						<h2>How do we use Docker?</h2>
+						<ul>
+							<li>It can be <a href="https://docs.docker.com/installation/" target="_blank">installed on all major platforms.</a></li>
+							<li>For Windows and Mac it runs in its own VM</li>
+							<li>The Docker daemon can be accessed via a command line tool OR via the RESTful API.</li>
+						</ul>
+						<img src="images/docker-architecture.png"/>
+					</section>
+					<section>
+						<h2>Images - Read only snapshot</h2>
+						<h2>Containers - Running instances of your image</h2>
+					</section>
+					<section>
+						<h2>Current Workflow</h2>
+					</section>
+					<section>
+						<h2>Docker Workflow</h2>
+					</section>
 				</section>
 
-
-				<section data-transition="linear" data-background="#6691ac" data-background-transition="slide">
-					<h2>How to use Drupal?</h2>
-					<ul>
-						<li>Quickly spin up an instance online at:
-							<ul>
-								<li>TryDrupal8.com</li>
-								<li>GetPantheon.com</li>
-								<li>SimplyTest.me</li>
-							</ul>
-						</li>
-						<li>Local tools:
-							<ul>
-								<li>Acquia Dev Desktop - www.acquia.com/products-services/dev-desktop</li>
-								<li>MAMP / WAMP</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
+				<!-- Example of nested vertical slides -->
 				<section>
-					<h2>Enough Talk... Lets Demo.</h2>
-				</section>
+					<section>
+						<h2>Ok enough talk, lets demo!</h2>
+					</section>
+				</section
 
-
-
-		</div>
+				<section>
+					<section>
+						<h2>Further exploration:</h2>
+						<ul>
+							<li><a href="https://docs.docker.com/compose/">Docker Compose</a> (formally fig)</a></li>
+							<li><a href="https://docs.docker.com/swarm/">Docker Swarm</a></li>
+							<li><a href="https://docs.docker.com/machine/">Docker Machine</a></li>
+						</ul>
+					</section>
+				<section>
+					<section>
+						<h2>Questions?</h2>
+						<p>We are looking for beta testers @ <h2>stackstarter.io</h2></p>
+						<img src="http://www.stackstarter.io/sites/default/files/stackstarter_logo_600px-RASTERIZED.png"/>
+					</section>
+				</section>		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -139,7 +175,7 @@
 
 				// Parallax scrolling
 				parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+				parallaxBackgroundSize: '2100px 900px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
